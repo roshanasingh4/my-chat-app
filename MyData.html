@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="Your Data Archive/">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Codecademy Data</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+	<style>
+		html {
+			font-family: sans-serif;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		main,
+		menu,
+		nav,
+		section,
+		summary {
+			display: block;
+		}
+
+		a {
+			background-color: transparent;
+		}
+
+		a:active,
+		a:hover {
+			outline: 0;
+		}
+
+		img {
+			border: 0;
+		}
+
+		button,
+		input,
+		optgroup,
+		select,
+		textarea {
+			color: inherit;
+			font: inherit;
+			margin: 0;
+		}
+
+		button {
+			overflow: visible;
+		}
+
+		button,
+		select {
+			text-transform: none;
+		}
+
+		button,
+		html input[type="button"],
+		input[type="reset"],
+		input[type="submit"] {
+			-webkit-appearance: button;
+			cursor: pointer;
+		}
+
+		button[disabled],
+		html input[disabled] {
+			cursor: default;
+		}
+
+		button::-moz-focus-inner,
+		input::-moz-focus-inner {
+			border: 0;
+			padding: 0;
+		}
+
+		input {
+			line-height: normal;
+		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			box-sizing: border-box;
+			padding: 0;
+		}
+
+		textarea {
+			overflow: auto;
+		}
+
+		html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		* {
+			max-height: 1000000px;
+		}
+
+		body {
+			color: rgba(0, 0, 0, .6);
+			background: #fbfbfb;
+			font: 15px/1.6 "Source Sans Pro", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+			min-width: 320px;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			vertical-align: top;
+		}
+
+		h1,
+		.h1,
+		h2,
+		.h2,
+		h3,
+		.h3,
+		h4,
+		.h4,
+		h5,
+		.h5,
+		h6,
+		.h6,
+		.h {
+			font-family: inherit;
+			font-weight: bold;
+			margin: 0 0 .5em;
+			color: inherit;
+		}
+
+		h1,
+		.h1 {
+			font-size: 36px;
+		}
+
+		p {
+			margin: 0 0 1em;
+		}
+
+		form,
+		fieldset {
+			margin: 0;
+			padding: 0;
+			border-style: none;
+		}
+
+		input[type="text"],
+		input[type="tel"],
+		input[type="email"],
+		input[type="search"],
+		input[type="password"],
+		textarea {
+			-webkit-appearance: none;
+			-webkit-border-radius: 0;
+			box-sizing: border-box;
+			border: 1px solid rgba(0, 0, 0, .6);
+			padding: .4em .7em;
+		}
+
+		input[type="text"]:focus,
+		input[type="tel"]:focus,
+		input[type="email"]:focus,
+		input[type="search"]:focus,
+		input[type="password"]:focus,
+		textarea:focus {
+			border-color: #000;
+		}
+
+		input[type="text"]::-webkit-input-placeholder,
+		input[type="tel"]::-webkit-input-placeholder,
+		input[type="email"]::-webkit-input-placeholder,
+		input[type="search"]::-webkit-input-placeholder,
+		input[type="password"]::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
+			color: rgba(0, 0, 0, .6);
+		}
+
+		input[type="text"]::-moz-placeholder,
+		input[type="tel"]::-moz-placeholder,
+		input[type="email"]::-moz-placeholder,
+		input[type="search"]::-moz-placeholder,
+		input[type="password"]::-moz-placeholder,
+		textarea::-moz-placeholder {
+			opacity: 1;
+			color: rgba(0, 0, 0, .6);
+		}
+
+		input[type="text"]:-moz-placeholder,
+		input[type="tel"]:-moz-placeholder,
+		input[type="email"]:-moz-placeholder,
+		input[type="search"]:-moz-placeholder,
+		input[type="password"]:-moz-placeholder,
+		textarea:-moz-placeholder {
+			color: rgba(0, 0, 0, .6);
+		}
+
+		input[type="text"]:-ms-input-placeholder,
+		input[type="tel"]:-ms-input-placeholder,
+		input[type="email"]:-ms-input-placeholder,
+		input[type="search"]:-ms-input-placeholder,
+		input[type="password"]:-ms-input-placeholder,
+		textarea:-ms-input-placeholder {
+			color: rgba(0, 0, 0, .6);
+		}
+
+		input[type="text"].placeholder,
+		input[type="tel"].placeholder,
+		input[type="email"].placeholder,
+		input[type="search"].placeholder,
+		input[type="password"].placeholder,
+		textarea.placeholder {
+			color: rgba(0, 0, 0, .6);
+		}
+
+		select {
+			-webkit-border-radius: 0;
+		}
+
+		select {
+			appearance: none;
+		}
+
+		select::-ms-expand {
+			display: none;
+		}
+
+		textarea {
+			resize: vertical;
+			vertical-align: top;
+		}
+
+		button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="file"],
+		input[type="submit"] {
+			-webkit-appearance: none;
+			-webkit-border-radius: 0;
+			cursor: pointer;
+		}
+
+		#side-menu {
+			margin: -60px 0 -51px;
+			width: 250px;
+		}
+
+		#content {
+			width: calc(100% - 250px);
+		}
+
+		#side-menu-wrapper {
+			-webkit-transition: -webkit-transform .3s ease-in-out;
+			transition: -webkit-transform .3s ease-in-out;
+			transition: transform .3s ease-in-out;
+			transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			width: calc(100% + 250px);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+		}
+
+		#side-menu-wrapper.side-menu-active {
+			-webkit-transform: translateX(-250px);
+			-ms-transform: translateX(-250px);
+			transform: translateX(-250px);
+		}
+
+		.side-menu-close {
+			width: 18px;
+			height: 18px;
+			-webkit-transition: opacity .3s ease-in-out;
+			transition: opacity .3s ease-in-out;
+			display: inline-block;
+			vertical-align: middle;
+			position: absolute;
+			left: 20px;
+			top: 22px;
+		}
+
+		.side-menu-close:hover {
+			opacity: .85;
+		}
+
+		.side-menu-close:before,
+		.side-menu-close:after {
+			content: "";
+			background: #fff;
+			height: 2px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			top: .5625rem;
+		}
+
+		.side-menu-close:after {
+			-webkit-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+
+		.side-menu {
+			color: #fff;
+			background-color: #1565c0;
+			padding: 146px 0 30px;
+			position: relative;
+		}
+
+		.side-nav {
+			font-size: 17px;
+			letter-spacing: .5px;
+		}
+
+		.side-nav li {
+			border-bottom: 1px solid #dcdcdc;
+		}
+
+		.side-nav a {
+			-webkit-transition: background .3s ease-in-out;
+			transition: background .3s ease-in-out;
+			display: block;
+			color: #fff;
+			padding: 15px 20px;
+			background: transparent;
+		}
+
+		.side-nav a:hover {
+			background: #1e88e5;
+			color: #fff;
+		}
+
+		#header {
+			padding: 7px;
+			background: rgba(20,28,58,1);
+			color: #fff;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 2px 1px -1px rgba(0, 0, 0, .12), 0 1px 1px rgba(0, 0, 0, .14);
+		}
+
+		#header .flex-container {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			position: relative;
+		}
+
+		#header .title {
+			display: inline-block;
+			vertical-align: middle;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			font-size: 12px;
+			letter-spacing: .15px;
+		}
+
+		.logo {
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: 8px;
+			width: 100px;
+		}
+
+		.side-menu-opener {
+			width: 18px;
+			height: 12px;
+			-webkit-transition: opacity .3s ease-in-out;
+			transition: opacity .3s ease-in-out;
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			margin-left: 10px;
+		}
+
+		.side-menu-opener:hover {
+			opacity: .85;
+		}
+
+		.side-menu-opener:before,
+		.side-menu-opener:after,
+		.side-menu-opener span {
+			background: #fff;
+			height: 2px;
+			position: absolute;
+			top: 5px;
+			left: 0;
+			right: 0;
+		}
+
+		.side-menu-opener:before,
+		.side-menu-opener:after {
+			content: "";
+			top: 0;
+		}
+
+		.side-menu-opener:after {
+			top: auto;
+			bottom: 0;
+		}
+
+		#footer {
+			padding: 3px 22px 4px;
+			background: rgba(20,28,58,1);
+			color: #fff;
+			text-align: center;
+		}
+
+		.footer-logo {
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: 6px;
+			margin-left: 13px;
+		}
+
+		.powered-by {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 13px;
+			letter-spacing: .4px;
+			margin-left: 18px;
+		}
+
+		#wrapper {
+			position: relative;
+			overflow: hidden;
+			min-height: 100vh;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		#wrapper > * {
+			-ms-flex-negative: 0;
+			flex-shrink: 0;
+		}
+
+		#main {
+			-webkit-box-flex: 1;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+		}
+
+		.container {
+			padding: 0 15px;
+			max-width: 1144px;
+			margin: 0 auto;
+		}
+
+		.container.container-md {
+			max-width: 940px;
+		}
+
+		body {
+			letter-spacing: .25px;
+		}
+
+		a {
+			-webkit-transition: color .3s ease-in-out;
+			transition: color .3s ease-in-out;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #0e4377;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+
+		h1,
+		.h1 {
+			color: rgba(20,28,58,1);
+			font-weight: 200;
+			letter-spacing: -.5px;
+			line-height: 1.2;
+			padding-bottom: 10px;
+		}
+
+		.btn {
+			-webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+			transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+			display: inline-block;
+			vertical-align: middle;
+			font-weight: 400;
+			text-align: center;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			border: 1px solid transparent;
+			padding: 5px 10px;
+			font-size: 15px;
+			line-height: 1.6;
+			text-transform: uppercase;
+			letter-spacing: 1.25px;
+			min-width: 121px;
+		}
+
+		.btn.btn-light {
+			color: rgba(0, 0, 0, .38);
+			background: #e0e0e0;
+			box-shadow: 0 0 0 0 transparent;
+		}
+
+		.btn.btn-light:hover {
+			color: #fff;
+			background: rgba(20,28,58,1);
+			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
+		}
+
+		.desc-block {
+			border: 1px solid rgba(0, 0, 0, .32);
+			border-radius: 5px;
+			font-size: 13px;
+			line-height: 1.23;
+			letter-spacing: .4px;
+			padding: 12px 10px 5px;
+			margin-bottom: 26px;
+		}
+
+		.desc-block p {
+			margin-bottom: 10px;
+		}
+
+		.consent-form {
+			margin: 0 auto;
+			max-width: 960px;
+			box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+			background: #fff;
+		}
+
+		.consent-form .desc-holder {
+			padding: 10px;
+		}
+
+		.heading-block {
+			font-size: 18px;
+			line-height: 1.3;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.heading-block h1 {
+			border-bottom: 1px solid #dcdcdc;
+		}
+
+		.table {
+			margin-bottom: 24px;
+			font-size: 13px;
+		}
+
+		.table .thead .tr {
+			background: #b0bec5;
+			min-height: 56px;
+			font-weight: 600;
+		}
+
+		.table .tr {
+			-webkit-transition: border-color .3s ease-in-out, background .3s ease-in-out;
+			transition: border-color .3s ease-in-out, background .3s ease-in-out;
+			background: #fff;
+			border-left: 2px solid transparent;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			min-height: 52px;
+			border-bottom: 1px solid #dcdcdc;
+			padding: 5px 10px;
+		}
+
+		.table .tr:hover {
+			background: rgba(20,28,58, 0.2);
+			border-left-color: rgba(20,28,58,1);
+		}
+		.table .thead .tr:hover {
+			background: #b0bec5;
+			border-left-color: #b0bec5;
+		}
+
+		.table .tr > * {
+			-ms-flex-negative: 0;
+			flex-shrink: 0;
+		}
+
+		.table .tr .title {
+			-webkit-box-flex: 1;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			display: inline-block;
+			vertical-align: middle;
+			width: 51%;
+		}
+
+		.title-l {
+			width: 50%;
+		}
+		.title-m {
+			width: 40%;
+		}
+		.title-r {
+			width: 10%;
+		}
+
+		.container .title-m {
+			width: 35%;
+		}
+
+		.table .accordion-opener {
+			display: inline-block;
+			vertical-align: middle;
+			color: rgba(0, 0, 0, .6);
+			position: relative;
+			margin-right: 30px;
+			padding: 0 20px 0 10px;
+			margin-left: auto;
+		}
+
+		.table .accordion-opener:after {
+			-webkit-transition: -webkit-transform .3s ease-in-out;
+			transition: -webkit-transform .3s ease-in-out;
+			transition: transform .3s ease-in-out;
+			transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 5px 5px 0 5px;
+			border-color: rgba(0, 0, 0, .54) transparent transparent transparent;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			-webkit-transform: translateY(-50%) rotate(0);
+			-ms-transform: translateY(-50%) rotate(0);
+			transform: translateY(-50%) rotate(0);
+		}
+
+		.table .slide {
+			padding: 19px 10px;
+			background: #b0bec5;
+			border-bottom: 1px solid #dcdcdc;
+		}
+
+		.table .slide .title {
+			display: block;
+			font-weight: 400;
+			margin-bottom: 2px;
+		}
+
+		.accordion .accordion-item .accordion-slide {
+			-webkit-transition: max-height .3s ease-in-out;
+			transition: max-height .3s ease-in-out;
+			overflow: hidden;
+			height: 0;
+			max-height: 0;
+		}
+
+		.accordion .accordion-item.active .accordion-slide {
+			height: auto;
+			max-height: 1000px;
+		}
+
+		.accordion .accordion-item.active .accordion-opener:after {
+			-webkit-transform: translateY(-50%) rotate(180deg);
+			-ms-transform: translateY(-50%) rotate(180deg);
+			transform: translateY(-50%) rotate(180deg);
+		}
+
+		.section {
+			padding: 30px 0 60px;
+		}
+
+		@media (min-width: 480px) {
+			#header {
+				padding: 7px 22px;
+			}
+
+			#header .title {
+				font-size: 17px;
+			}
+
+			.logo {
+				width: 157px;
+			}
+
+			.table .tr .title {
+				width: 34%;
+			}
+		}
+
+		@media (min-width: 768px) {
+			h1,
+			.h1 {
+				font-size: 66px;
+				line-height: 1.7;
+				margin: 0 0 23px;
+				padding-bottom: 0;
+			}
+
+			.desc-block {
+				padding: 11px 20px 7px 25px;
+			}
+
+			.consent-form .desc-holder {
+				padding: 0 23px 0 60px;
+			}
+
+			.heading-block {
+				font-size: 23px;
+				margin-bottom: 56px;
+			}
+
+			.table {
+				font-size: 15px;
+			}
+
+			.table .tr {
+				padding: 5px 25px 5px 58px;
+				border-left-width: 4px;
+			}
+
+			.table .tr .title {
+				width: 54%;
+			}
+
+			.table .slide {
+				padding: 19px 71px 19px 61px;
+			}
+
+			.section {
+				padding: 48px 0 100px;
+			}
+
+			.section-consent .heading-block {
+				margin-bottom: 86px;
+			}
+		}
+
+		@media (min-width: 1024px) {
+			#side-menu {
+				width: 421px;
+			}
+
+			#content {
+				width: calc(100% - 421px);
+			}
+
+			#side-menu-wrapper {
+				width: calc(100% + 421px);
+			}
+
+			#side-menu-wrapper.side-menu-active {
+				-webkit-transform: translateX(-421px);
+				-ms-transform: translateX(-421px);
+				transform: translateX(-421px);
+			}
+
+			.side-menu-close {
+				left: 23px;
+			}
+
+			.side-nav a {
+				padding: 21px 20px 11px 68px;
+			}
+
+			.table .tr .title {
+				width: 50%;
+			}
+
+			.section {
+				padding-bottom: 214px;
+			}
+		}
+
+		@media (max-width: 479px) {
+			.table .accordion-opener {
+				width: 10px;
+				font-size: 0;
+				margin-right: 14px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="flex-container">
+				<strong class="logo">
+				<a href="#"><img width="180" height="34" src="https://api.ethyca.com/privacy-center/organization/logo/hashed/8hFZ5QTmifOz8Xop6HKBKdlgf7ZpmyeohtydvQ2eHw=" alt="ETHYCA"></a>				</strong>
+
+			</div>
+		</header>
+		<main id="main">
+			<div id="side-menu-wrapper">
+				<div id="content">
+					<section class="section section-consent">
+						<div class="container container-md">
+							<div class="heading-block">
+								<h1>Your Data</h1>
+							</div>
+						</div>
+<div class="container">
+							<form action="#" class="consent-form">
+								<div class="table">
+									<div class="thead">
+										<div class="tr">
+											<span class="title-l">Category</span>
+											<span class="title-r">Action</span>
+										</div>
+
+									</div>
+									<div class="tbody accordion"><div class="tr">
+											<span class="title">Privacy Request Information/Ethyca/Organization</span>
+											<a href="./Privacy Request Information/Ethyca/Organization/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">Privacy Request Information/Ethyca/SubjectIdentity</span>
+											<a href="./Privacy Request Information/Ethyca/SubjectIdentity/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">Profile information/Identity</span>
+											<a href="./Profile information/Identity/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">Profile information/User</span>
+											<a href="./Profile information/User/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">authentications/authentications</span>
+											<a href="./authentications/authentications/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.ad_click/codecademy.ad_click</span>
+											<a href="./codecademy.ad_click/codecademy.ad_click/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.ad_impression/codecademy.ad_impression</span>
+											<a href="./codecademy.ad_impression/codecademy.ad_impression/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.exercise_force_pass/codecademy.exercise_force_pass</span>
+											<a href="./codecademy.exercise_force_pass/codecademy.exercise_force_pass/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.mobile_app_open/codecademy.mobile_app_open</span>
+											<a href="./codecademy.mobile_app_open/codecademy.mobile_app_open/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.mobile_click/codecademy.mobile_click</span>
+											<a href="./codecademy.mobile_click/codecademy.mobile_click/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.mobile_sign_in/codecademy.mobile_sign_in</span>
+											<a href="./codecademy.mobile_sign_in/codecademy.mobile_sign_in/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.mobile_visit/codecademy.mobile_visit</span>
+											<a href="./codecademy.mobile_visit/codecademy.mobile_visit/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.notification_clicked/codecademy.notification_clicked</span>
+											<a href="./codecademy.notification_clicked/codecademy.notification_clicked/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.onboarding_survey_answer/codecademy.onboarding_survey_answer</span>
+											<a href="./codecademy.onboarding_survey_answer/codecademy.onboarding_survey_answer/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.project_started/codecademy.project_started</span>
+											<a href="./codecademy.project_started/codecademy.project_started/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.search_click/codecademy.search_click</span>
+											<a href="./codecademy.search_click/codecademy.search_click/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.search_query/codecademy.search_query</span>
+											<a href="./codecademy.search_query/codecademy.search_query/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.search_result/codecademy.search_result</span>
+											<a href="./codecademy.search_result/codecademy.search_result/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_click/codecademy.user_click</span>
+											<a href="./codecademy.user_click/codecademy.user_click/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_content_completed/codecademy.user_content_completed</span>
+											<a href="./codecademy.user_content_completed/codecademy.user_content_completed/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_email_trigger/codecademy.user_email_trigger</span>
+											<a href="./codecademy.user_email_trigger/codecademy.user_email_trigger/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_impression/codecademy.user_impression</span>
+											<a href="./codecademy.user_impression/codecademy.user_impression/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_meaningful_content_loaded/codecademy.user_meaningful_content_loaded</span>
+											<a href="./codecademy.user_meaningful_content_loaded/codecademy.user_meaningful_content_loaded/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_notification/codecademy.user_notification</span>
+											<a href="./codecademy.user_notification/codecademy.user_notification/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_pro_email_receipt/codecademy.user_pro_email_receipt</span>
+											<a href="./codecademy.user_pro_email_receipt/codecademy.user_pro_email_receipt/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_reset_progress/codecademy.user_reset_progress</span>
+											<a href="./codecademy.user_reset_progress/codecademy.user_reset_progress/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_sign_in/codecademy.user_sign_in</span>
+											<a href="./codecademy.user_sign_in/codecademy.user_sign_in/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_sign_out/codecademy.user_sign_out</span>
+											<a href="./codecademy.user_sign_out/codecademy.user_sign_out/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_sign_up/codecademy.user_sign_up</span>
+											<a href="./codecademy.user_sign_up/codecademy.user_sign_up/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_submit/codecademy.user_submit</span>
+											<a href="./codecademy.user_submit/codecademy.user_submit/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_visit/codecademy.user_visit</span>
+											<a href="./codecademy.user_visit/codecademy.user_visit/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.user_workspace_init/codecademy.user_workspace_init</span>
+											<a href="./codecademy.user_workspace_init/codecademy.user_workspace_init/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">codecademy.users/codecademy.users</span>
+											<a href="./codecademy.users/codecademy.users/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">content/Ticket</span>
+											<a href="./content/Ticket/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">user events information/Events</span>
+											<a href="./user events information/Events/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">user information/User</span>
+											<a href="./user information/User/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">users/users</span>
+											<a href="./users/users/index.html" class="btn btn-light">View Data</a>
+										</div><div class="tr">
+											<span class="title">zendesk.users/zendesk.users</span>
+											<a href="./zendesk.users/zendesk.users/index.html" class="btn btn-light">View Data</a>
+										</div></div>
+								</div>
+							</form>
+						</div>
+</section>
+				</div>
+			</div>
+		</main>
+		<footer id="footer">
+			<span class="powered-by">Powered by 
+				<strong class="footer-logo">
+					<a href="#"><img width="157" height="38" src="https://ethyca-cdn.s3.amazonaws.com/ethyca-logo.svg" alt="ETHYCA"></a>
+				</strong>
+			</span>
+		</footer>
+	</div>
+</body>
+</html>
+
